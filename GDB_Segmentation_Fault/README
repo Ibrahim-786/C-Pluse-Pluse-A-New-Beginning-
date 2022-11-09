@@ -1,0 +1,55 @@
+
+1) Generating core file
+
+https://jvns.ca/blog/2018/04/28/debugging-a-segfault-on-linux/
+
+https://www.cse.unsw.edu.au/~learn/debugging/modules/gdb_coredumps/
+
+ulimit -c unlimited
+sudo sysctl -w kernel.core_pattern=/tmp/core-%e.%p.%h.%t
+cat /proc/PID/limit
+
+echo "<desired-file-path>/<desired-file-name>" > /proc/sys/kernel/core_pattern
+
+gcc -g <any other flags> -o file_name file_name.c
+
+$ ./<file_name>
+Segmentation fault (core dumped)
+
+ gdb <binary-file> <core-dump-file>
+
+
+
+
+
+
+
+
+
+
+2) Some GDB Tips
+
+ a) GDB Gui
+ 		ctr+a+x  (very use full)
+
+ b) Gnu Doc
+        https://ftp.gnu.org/old-gnu/Manuals/gdb/html_node/gdb_28.html#:~:text=You%20can%20see%20these%20breakpoints,command%20%60maint%20info%20breakpoints'%20.&text=Using%20the%20same%20format%20as,shown%20with%20negative%20breakpoint%20numbers.
+
+        https://go.dev/doc/gdb
+
+
+ c) info break
+
+ d) print var_name
+
+ e) set var var_name=val
+
+ f) c - continue
+
+ g) n- next
+
+ h) q - quit
+
+
+
+

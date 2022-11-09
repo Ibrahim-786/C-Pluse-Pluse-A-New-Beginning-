@@ -1,0 +1,12 @@
+Valgrind usage 
+
+valgrind  --tool=helgrind  ./a.out   // for syncronization issue
+valgrind  --tool=memcheck  ./a.out   // for memory leak issue
+
+
+valgrind --tool=callgrind --simulate-cache=yes program-to-run program-arguments
+
+https://web.stanford.edu/class/archive/cs/cs107/cs107.1222/resources/callgrind
+
+
+https://www.it.uc3m.es/pbasanta/asng/course_notes/helgrind_tool_en.html
