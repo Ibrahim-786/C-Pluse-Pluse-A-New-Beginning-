@@ -1,0 +1,13 @@
+Purpose of polymorphism is 
+->  share it's features to child class (by means of inheritance)
+->  same name different object different actions
+
+
+
+We can say 3 types of class based inheritance polymorphism (virtual, =0)
+
+1) base class with all concrete functions
+
+2) base class some concrete function and some virtual fucntions
+
+3) base class with all pure virtual functions- abstract class

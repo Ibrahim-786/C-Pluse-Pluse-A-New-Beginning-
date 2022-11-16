@@ -5,6 +5,9 @@ https://jvns.ca/blog/2018/04/28/debugging-a-segfault-on-linux/
 
 https://www.cse.unsw.edu.au/~learn/debugging/modules/gdb_coredumps/
 
+
+
+
 ulimit -c unlimited
 sudo sysctl -w kernel.core_pattern=/tmp/core-%e.%p.%h.%t
 cat /proc/PID/limit
@@ -35,8 +38,8 @@ Segmentation fault (core dumped)
  b) Gnu Doc
         https://ftp.gnu.org/old-gnu/Manuals/gdb/html_node/gdb_28.html#:~:text=You%20can%20see%20these%20breakpoints,command%20%60maint%20info%20breakpoints'%20.&text=Using%20the%20same%20format%20as,shown%20with%20negative%20breakpoint%20numbers.
 
-        https://go.dev/doc/gdb
-
+	https://go.dev/doc/gdb
+	https://sourceware.org/gdb/current/onlinedocs/gdb/
 
  c) info break
 
