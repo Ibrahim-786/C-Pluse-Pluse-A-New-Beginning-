@@ -1,0 +1,22 @@
+STL- Standard template library
+Ready made data structure 
+
+
+Why STL
+
+1) dealing with data
+2) size of data
+3) program will be dealing with collection of value
+4) storing the collection values we need data structure
+
+Data structure
+collection of data and arrangment of data for it efficent utilization
+
+stack 
+queue
+deque
+priority queue
+map
+set
+
+
