@@ -1,0 +1,77 @@
+Pointers Varieties
+*************************************************************************************************
+
+(1) int *p;
+// p is a pointer to an integer quantity
+
+(2) int *p[10];
+// p is a 10-element array of pointers to integer quantities
+
+(3) int (*p)[10];
+// p is a pointer to a 10-element integer array
+
+(4) int *p(void);
+// p is a function that returns a pointer to an integer quantity
+
+(5) int p(char *a);
+// p is a function that accepts an argument which is a pointer to a character returns an
+// integer quantity
+
+(6) int *p(char *a);
+// p is a function that accepts an argument which is a pointer to a character returns a
+// pointer to an integer quantity
+
+(7) int (*p)(char *a);
+// p is pointer to a function that accepts an argument which is a pointer to a character
+// returns an integer quantity
+
+(8) int (*p(char *a))[10];
+// p is a function that accepts an argument which is a pointer to a character returns a
+// pointer to a 10-element integer array
+
+(9) int p(char (*a)[]);
+// p is a function that accepts an argument which is a pointer to a character array returns
+// an integer quantity
+
+(10) int p(char *a[]);
+// p is a function that accepts an argument which is a array of pointers to characters
+// returns an integer quantity
+
+(11) int *p(char a[]);
+// p is a function that accepts an argument which is a character array returns a pointer to
+// to an integer quantity
+
+(12) int *p(char (*a)[]);
+// p is a function that accepts an argument which is a pointer to a character array returns a
+// pointer to an integer quantity
+
+(13) int *p(char *a[]);
+// p is a function that accepts an argument which is an array of pointers to characters 
+// returns a pointer to an integer quantity
+
+(14) int (*p)(char (*a)[]);
+// p is pointer to a function that accepts an argument which is a pointer to a character array
+// returns an integer quantity
+
+(15) int *(*p)(char (*a)[]);
+// p is pointer to a function that accepts an argument which is a pointer to a character array
+// returns a pointer to an integer quantity
+
+(16) int *(*p)(char *a[]);
+// p is pointer to a function that accepts an argument which is a array of pointers to
+// characters returns a pointer to an integer quantity
+
+(17) int (*p[10])(void);
+// p is 10-element array of pointers to functions; each function returns an integer quantity
+
+(18) int (*p[10])(char a);
+// p is 10-element array of pointers to functions; each function accepts an argument which is
+// a character and returns an integer quantity
+
+(19) int *(*p[10])(char a);
+// p is 10-element array of pointers to functions; each function accepts an argument which is
+// a character and returns a pointer to an integer quantity
+
+(20) int *(*p[10])(char *a);
+// p is 10-element array of pointers to functions; each function accepts an argument which is
+// a pointer to a character and returns a pointer to an integer quantity
