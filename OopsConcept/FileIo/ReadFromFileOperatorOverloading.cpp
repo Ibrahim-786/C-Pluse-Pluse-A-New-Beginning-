@@ -10,11 +10,11 @@ class student
 		int roll;
 		std::string branch;
 
-		friend std::ifstream& operator>>(std::ifstream& of,student s1);
+		friend std::ifstream& operator>>(std::ifstream& of,student &s1);
 
 };
 
-std::ifstream& operator>>(std::ifstream& ifs,student s1)
+std::ifstream& operator>>(std::ifstream& ifs,student &s1)
 {
 	ifs>>s1.name;
 	ifs>>s1.roll;
@@ -28,7 +28,6 @@ int main()
 {
 
 	student s1;
-
 
 	std::ifstream  ifs;
 		ifs.open("OverloadedStudent.txt");
