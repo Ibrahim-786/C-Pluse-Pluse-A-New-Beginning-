@@ -1,9 +1,8 @@
 #include<iostream>
-
+int arr[5] = {1,3,4,5,6};
 
 int* add()
 {
-	int arr[5] = {2,3,4,5,6};
 
 	return &arr[0];
 }

@@ -5,7 +5,7 @@ int main(int argv, char * argc[])
 {
 
 	enum number 
-	{one,
+	{one=1,
 	two,
 	three,
 	four,

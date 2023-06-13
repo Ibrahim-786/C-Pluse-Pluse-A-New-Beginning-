@@ -19,6 +19,6 @@ int main(int argc, char *argv[])
 	}
 	
 
-	//delete []ptr;
+	delete []ptr;
 	return 0;
 }

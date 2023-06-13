@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 
 
 
-	std::cout<<"Gcd of "<<num1<<" and "<<num2<<" is "<<lowest;
+	std::cout<<"Gcd of "<<num1<<" and "<<num2<<" is "<<lowest<<std::endl;
 
 	return 0;
 }
